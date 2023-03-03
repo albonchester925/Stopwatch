@@ -1,0 +1,8 @@
+import time
+
+def stopwatch(start_time=None):
+    """A pure function that returns elapsed time since `start_time`."""
+    if start_time is None:
+        return 0
+    else:
+        return time.monotonic() - start_time
